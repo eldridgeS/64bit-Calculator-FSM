@@ -6,7 +6,7 @@ The core of the design is a Finite State Machine (FSM) controller that uses a si
 **Objective:** Design a calculator that performs 64-bit unsigned addition by orchestrating two 32-bit additions using a Finite State Machine (FSM).  
 ---
 
-### **Modules to Implement**
+### **Modules Implemented**
 
 * **adder32.sv**  
   * **Function:** Computes the sum of two 32-bit unsigned integers.  
@@ -39,7 +39,7 @@ The state machine will sequence through the following core operations:
 
 ### **Verification & Simulation Steps**
 
-To test the design, navigate to the sim/behav/ directory and run the following commands:
+To test the design, navigate to the sim/ directory and run the following commands:
 
 1. **make link**: Links the source files into the simulation directory.  
 2. **make xrun** or **make verify\_onboarding**: Compiles and runs the simulation testbench.  
@@ -48,6 +48,6 @@ To test the design, navigate to the sim/behav/ directory and run the following c
 ---
 
 ### **Design Final Result**
-![Calculator Waveform](./Design_files/images/calculator_waveform.png)
+![Calculator Waveform](./Design_files/images/Calculator_Waveform.png)
 This waveform demonstrates a complete and successful 64-bit addition cycle, confirming the calculator is working correctly. The FSM controller properly sequences through its states to read two 32-bit operand pairs from memory (r_data). Each sum is calculated and correctly placed into the lower and then upper halves of the result buffer (buffer_o). Finally, the controller asserts the write signal to store the final 64-bit sum (w_data) back into memory.
 
