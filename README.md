@@ -48,6 +48,6 @@ To test the design, navigate to the sim/ directory and run the following command
 ---
 
 ### **Design Final Result**
-![Calculator Waveform](./Design_files/images/Calculator_Waveform.png)
+![Calculator Waveform](./Design_Files/images/Calculator_Waveform.png)
 This waveform demonstrates a complete and successful 64-bit addition cycle, confirming the calculator is working correctly. The FSM controller properly sequences through its states to read two 32-bit operand pairs from memory (r_data). Each sum is calculated and correctly placed into the lower and then upper halves of the result buffer (buffer_o). Finally, the controller asserts the write signal to store the final 64-bit sum (w_data) back into memory.
 
