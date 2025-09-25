@@ -1,0 +1,143 @@
+xrun(64): 25.03-s003: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	25.03-s003: Started on Sep 12, 2025 at 15:30:22 EDT
+xrun
+	-64bit
+	-sv
+	-linedebug
+	-access +rwc
+	-timescale 1ns/10ps
+	+define+SIM=1
+	+define+INST_FILE=""
+	+testname=
+	+incdir+sym_links
+	-coverage all
+	-licqueue
+	-covoverwrite
+	-f sym_links/sim_no_path.include
+		sym_links/calculator_pkg.sv
+		sym_links/adder32.sv
+		sym_links/controller.sv
+		sym_links/full_adder.sv
+		sym_links/result_buffer.sv
+		sym_links/sky130_sram_2kbyte_1rw1r_32x512_8.sv
+		sym_links/tb_calculator.sv
+		sym_links/top_lvl.sv
+	-logfile simulation.log
+
+   User defined plus("+") options:
+	+testname=
+
+xrun: *W,BADPRF: The -linedebug option may have an adverse performance impact.
+file: sym_links/calculator_pkg.sv
+	package worklib.calculator_pkg:sv
+		errors: 0, warnings: 0
+file: sym_links/adder32.sv
+	module worklib.adder32:sv
+		errors: 0, warnings: 0
+file: sym_links/controller.sv
+	module worklib.controller:sv
+		errors: 0, warnings: 0
+file: sym_links/full_adder.sv
+	module worklib.full_adder:sv
+		errors: 0, warnings: 0
+file: sym_links/result_buffer.sv
+	module worklib.result_buffer:sv
+		errors: 0, warnings: 0
+file: sym_links/sky130_sram_2kbyte_1rw1r_32x512_8.sv
+	module worklib.sky130_sram_2kbyte_1rw1r_32x512_8:sv
+		errors: 0, warnings: 0
+file: sym_links/tb_calculator.sv
+	module worklib.tb_calculator:sv
+		errors: 0, warnings: 0
+file: sym_links/top_lvl.sv
+	module worklib.top_lvl:sv
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory sym_links given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		calculator_pkg
+		tb_calculator
+
+	Extracting FSMs for coverage:
+		worklib.controller
+			FSM extracted for state register state
+		worklib.sky130_sram_2kbyte_1rw1r_32x512_8
+		worklib.full_adder
+		worklib.adder32
+		worklib.result_buffer
+		worklib.top_lvl
+		worklib.tb_calculator
+	Total FSMs extracted = 1
+	Building instance overlay tables: ..
+xmelab: *W,COVFDP: FSM description matching across instance of a module for "COVFDM" warning has been moved from elaboration to simulation dumping. To restore old matching behavior, use "set_backward_compat -COVFDM_during_elab". Also, it is recommended to use set_parameterized_module_coverage CCF command to avoid coverage loss due to FSM description difference across instances of a module.
+xmelab: *W,COVFHT: FSM hold transitions (transitions to the current state) are not extracted for any FSM in default mode.
+.................. Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+xmelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.result_buffer:sv <0x7bbe15f0>
+			streams:   5, words:  3856
+		worklib.full_adder:sv <0x3aff279b>
+			streams:   1, words:  1047
+		worklib.top_lvl:sv <0x732cd049>
+			streams:  32, words: 12221
+		worklib.tb_calculator:sv <0x395e5675>
+			streams:  12, words: 15528
+		worklib.adder32:sv <0x50c15814>
+			streams:   4, words:  3715
+		worklib.controller:sv <0x0ab7ca60>
+			streams:  13, words: 13732
+		worklib.sky130_sram_2kbyte_1rw1r_32x512_8:sv <0x0b7b34ed>
+			streams:   8, words: 17168
+xmelab: *W,COVNOEN: By default, toggle coverage is not supported for systemverilog enumerated nets and variables. To enable toggle coverage of these objects, specify the 'set_toggle_scoring -sv_enum' command in the coverage configuration file.
+  reg [DATA_WIDTH-1:0]    mem [0:RAM_DEPTH-1];
+                            |
+xmelab: *W,COVMDD (./sym_links/sky130_sram_2kbyte_1rw1r_32x512_8.sv,52|28): Toggle coverage for bit, logic, reg, wire, enum and struct multi-dimensional static arrays and vectors is not supported by default. To enable toggle coverage for enum multi-dimensional static arrays specify 'set_toggle_scoring -sv_enum enable_mda' and for other multi-dimensional static arrays, specify 'set_toggle_scoring -sv_mda [<max_bit_base2_exponent>] [-sv_mda_of_struct]' ccf command in the coverage configuration file.
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 39       7
+		Verilog packages:         1       1
+		Registers:              125      51
+		Scalar wires:           241       -
+		Expanded wires:          64       2
+		Vectored wires:          36       -
+		Always blocks:           14       9
+		Initial blocks:           2       2
+		Parallel blocks:          1       1
+		Cont. assignments:       37       6
+		Pseudo assignments:     134       -
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.tb_calculator:sv
+Loading snapshot worklib.tb_calculator:sv .................... Done
+xcelium> source /tools/software/cadence/xcelium/latest/tools/xcelium/files/xmsimrc
+xcelium> run
+
+--------------Beginning Simulation!--------------
+
+Time:                    0
+--------------Initializing Signals---------------
+
+Time:                 1000
+
+-------------Finished Simulation!----------------
+
+Time:              1293000
+Simulation complete via $finish(1) at time 12930 NS + 0
+./sym_links/tb_calculator.sv:52         $finish;
+xcelium> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  tb_calculator(tb_calculator)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_103bf3ff_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_103bf3ff_00000000.ucd
+TOOL:	xrun(64)	25.03-s003: Exiting on Sep 12, 2025 at 15:30:23 EDT  (total: 00:00:01)

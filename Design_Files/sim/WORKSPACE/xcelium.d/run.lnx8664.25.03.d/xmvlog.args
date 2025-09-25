@@ -1,0 +1,34 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.25.03.d
+-RUNMODE
+-sv
+-LINEDEBUG
+-DEFINE
+SIM=1
+-DEFINE
+INST_FILE=\"\"
+-INCDIR
+sym_links
+sym_links/calculator_pkg.sv
+sym_links/adder32.sv
+sym_links/controller.sv
+sym_links/full_adder.sv
+sym_links/result_buffer.sv
+sym_links/sky130_sram_2kbyte_1rw1r_32x512_8.sv
+sym_links/tb_calculator.sv
+sym_links/top_lvl.sv
+-CDSLIB
+./xcelium.d/run.lnx8664.25.03.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.25.03.d/hdlrun.var
+-no_analogsolver
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.25.03.d/xllibs
+-ALLOWUNBOUND
+-sv_ms

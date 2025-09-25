@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/nethome/esurianto3/Digital-Design-Onboarding/src/verilog/calculator_pkg.sv
+/nethome/esurianto3/Digital-Design-Onboarding/src/verilog/adder32.sv
+/nethome/esurianto3/Digital-Design-Onboarding/src/verilog/controller.sv
+/nethome/esurianto3/Digital-Design-Onboarding/src/verilog/full_adder.sv
+/nethome/esurianto3/Digital-Design-Onboarding/src/verilog/result_buffer.sv
+/nethome/esurianto3/Digital-Design-Onboarding/src/verilog/sky130_sram_2kbyte_1rw1r_32x512_8.sv
+/nethome/esurianto3/Digital-Design-Onboarding/src/verilog/tb_calculator.sv
+/nethome/esurianto3/Digital-Design-Onboarding/src/verilog/top_lvl.sv

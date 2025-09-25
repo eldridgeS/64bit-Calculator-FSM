@@ -1,0 +1,9 @@
+1753467282 /tools/software/cadence/ic/23.10.150/share/cdssetup/cds.lib
+1757611398 /nethome/esurianto3/Digital-Design-Onboarding/src/verilog/calculator_pkg.sv
+1757644059 /nethome/esurianto3/Digital-Design-Onboarding/src/verilog/adder32.sv
+1757645511 /nethome/esurianto3/Digital-Design-Onboarding/src/verilog/controller.sv
+1757611398 /nethome/esurianto3/Digital-Design-Onboarding/src/verilog/full_adder.sv
+1757644203 /nethome/esurianto3/Digital-Design-Onboarding/src/verilog/result_buffer.sv
+1757611398 /nethome/esurianto3/Digital-Design-Onboarding/src/verilog/sky130_sram_2kbyte_1rw1r_32x512_8.sv
+1757611398 /nethome/esurianto3/Digital-Design-Onboarding/src/verilog/tb_calculator.sv
+1757644599 /nethome/esurianto3/Digital-Design-Onboarding/src/verilog/top_lvl.sv
