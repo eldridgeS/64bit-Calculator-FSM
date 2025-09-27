@@ -96,6 +96,6 @@ Use the following commands from the sim/behav/ directory to manage the verificat
 ---
 
 ### **Final Results**
-![Verdis Coverage](./Verification_Files/Screenshot 2025-09-27 131237.png)
+![Verdis Coverage](./Verification_Files/coverage.png)
 Reached over 99% coverage for my_calc DUT, with 100% for FSM
 
